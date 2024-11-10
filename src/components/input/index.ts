@@ -1,4 +1,4 @@
 //@ts-ignore
-import "./input.css";
+import "./input.pcss";
 //@ts-ignore
 export { default as Input } from "./input.hbs?raw";

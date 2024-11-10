@@ -1,4 +1,4 @@
 //@ts-ignore
-import "./signin.css";
+import "./signin.pcss";
 //@ts-ignore
 export { default as SigninPage } from "./signin.hbs?raw";

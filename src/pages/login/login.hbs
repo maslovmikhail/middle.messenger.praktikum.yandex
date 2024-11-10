@@ -1,9 +1,9 @@
 <div class="container">
         {{> Header text="Вход"}}
     <form class="form">
-        {{> Input label="Логин" }}
-        {{> Input label="Пароль" type="password" }}
-        {{> Button label="Авторизоваться" }}
+        {{> Input label="Логин"  type="text" name="login" }}
+        {{> Input label="Пароль" type="password" name="password" }}
+        {{> Button class="login-button" label="Авторизоваться" }}
         {{> Link text="Нет аккаунта?" }}
     </form>
 </div>

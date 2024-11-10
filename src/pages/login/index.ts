@@ -1,4 +1,4 @@
 //@ts-ignore
-import "./login.css";
+import "./login.pcss";
 //@ts-ignore
 export { default as LoginPage } from "./login.hbs?raw";

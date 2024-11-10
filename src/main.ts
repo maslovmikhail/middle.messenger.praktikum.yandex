@@ -25,4 +25,4 @@ function navigate(page: string) {
   container.innerHTML = temlpatingFunction(context);
 }
 
-document.addEventListener("DOMContentLoaded", () => navigate("login"));
+document.addEventListener("DOMContentLoaded", () => navigate("signin"));
