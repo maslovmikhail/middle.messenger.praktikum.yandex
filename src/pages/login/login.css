@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 30px 30px;
+  width: 340px;
+  box-shadow: 0 0 6px 0 #00000024;
+  border-radius: 12px;
+}
+
+.header {
+  text-align: center;
+  margin-block-end: 40px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  margin-block-start: 159px;
+}
+
+.link {
+  margin-block-start: 14px;
+}
