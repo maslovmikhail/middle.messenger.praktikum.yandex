@@ -1,9 +1,28 @@
-<div class="container">
+<div class="wrapper">
+    <div class="container">
         {{> Header text="Вход"}}
-    <form class="form">
-        {{> Input label="Логин"  type="text" name="login" }}
-        {{> Input label="Пароль" type="password" name="password" }}
-        {{> Button class="login-button" label="Авторизоваться" }}
-        {{> Link text="Нет аккаунта?" }}
-    </form>
+        <form class="form">
+            {{> Input label="Логин" type="text" name="login" decoration="primary" }}
+            {{> Input label="Пароль" type="password" name="password" decoration="primary" }}
+            {{> Button class="login-button" label="Авторизоваться" type="primary" }}
+            {{> Button label="Нет аккаунта?" type="link" }}
+        </form>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="container">
+        {{> Header text="Регистрация"}}
+        <form class="form">
+            {{> Input label="Почта" type="email" name="email" decoration="primary" }}
+            {{> Input label="Логин" type="text" name="login" decoration="primary" }}
+            {{> Input label="Имя" type="text" name="first_name" decoration="primary" }}
+            {{> Input label="Фамилия" type="text" name="second_name" decoration="primary" }}
+            {{> Input label="Телефон" type="tel" name="phone" decoration="primary" }}
+            {{> Input label="Пароль" type="password" decoration="primary" }}
+            {{> Input label="Пароль (ещё раз)" type="password" name="password" decoration="primary" }}
+            {{> Button label="Зарегистрироваться" class="signin-button" name="password" type="primary"}}
+            {{> Button label="Войти" type="link" }}
+        </form>
+    </div>
 </div>

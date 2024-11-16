@@ -5,6 +5,8 @@ import * as Pages from "./pages";
 const pages = {
   login: [Pages.LoginPage],
   signin: [Pages.SigninPage],
+  chat: [Pages.ChatPage],
+  navigate: [Pages.NavigatePage],
 };
 
 Object.entries(Components).forEach(([name, template]) => {
@@ -25,4 +27,15 @@ function navigate(page: string) {
   container.innerHTML = temlpatingFunction(context);
 }
 
-document.addEventListener("DOMContentLoaded", () => navigate("signin"));
+document.addEventListener("DOMContentLoaded", () => navigate("chat"));
+
+document.addEventListener('click', e => {
+  //@ts-ignore
+  const page = e.target.getAttribute('page');
+  if (page) {
+    navigate(page);
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }
+});

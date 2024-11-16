@@ -1,7 +1,3 @@
-/* .input {
-  padding: 10px;
-} */
-
 .input__container {
   display: flex;
   height: 38px;
@@ -22,7 +18,6 @@
 .input__element {
   border: none;
   padding: 0%;
-  border-bottom: 1px solid var(--main-color);
   font-size: 13px;
   font-weight: 500;
   color: var(--text-color);
@@ -33,6 +28,12 @@
   }
 }
 
+.input__primary {
+  border-bottom: 1px solid var(--main-color);
+}
+
+
+
 .input__text-error {
   transform: translateY(-7px);
   color: var(--error-color);
@@ -41,8 +42,8 @@
   display: none;
 }
 
-.input__element:not(:placeholder-shown) + .input__label,
-.input__element:focus + .input__label {
+.input__primary:not(:placeholder-shown) + .input__label,
+.input__primary:focus + .input__label {
   transform: translateY(-36px);
   font-size: 9px;
 }

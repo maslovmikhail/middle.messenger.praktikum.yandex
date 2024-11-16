@@ -1,0 +1,363 @@
+{{!-- Выбрать чат --}}
+<div class="chat-container">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            {{> Button label="Профиль" class="profile-button" type="secondary" }}
+            {{> Input type="search" placeholder="Поиск" decoration="chat-list" }}
+        </div>
+        <div class="sidebar__chat-list">
+            {{>
+            ChatListElement chat-name="Андрей"
+            user-name="Вы"
+            user-message="Изображение"
+            publication-date="10:49"
+            message-count="2"
+            }}
+
+            {{>
+            ChatListElement chat-name="Киноклуб"
+            user-message="Стикер"
+            publication-date="12:00"
+            }}
+
+            {{>
+            ChatListElement chat-name="Илья"
+            user-message="Друзья, у меня для вас особенный выпуск новостей!..."
+            publication-date="15:12"
+            message-count="4"
+            }}
+
+            {{>
+            ChatListElement chat-name="Вадим"
+            user-name="Вы"
+            user-message="Круто"
+            publication-date="Пт"
+            }}
+
+            {{>
+            ChatListElement chat-name="тет-а-теты"
+            user-message="И Human Interface Guidelines и Material Design рекомендуют..."
+            publication-date="Ср"
+            }}
+
+            {{>
+            ChatListElement chat-name="1, 2, 3"
+            user-message="Миллионы россиян ежедневно проводят десятки часов свое..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Design Destroyer"
+            user-message="В 2008 году художник Jon Rafman  начал собирать..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Day."
+            user-message="Так увлёкся работой по курсу, что совсем забыл его анонсир..."
+            publication-date="1 Мая 2020"
+            }}
+
+            {{>
+            ChatListElement chat-name="Стас Рогозин"
+            user-message="Можно или сегодня или завтра..."
+            publication-date="12 Апр 2020"
+            }}
+        </div>
+    </aside>
+    <div class="chat-window-empty">
+        <p class="chat-window-empty-message">Выберите чат чтобы отправить сообщение</p>
+    </div>
+</div>
+
+{{!-- Чат --}}
+<div class="chat-container">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            {{> Button label="Профиль" class="profile-button" type="secondary" }}
+            {{> Input type="search" placeholder="Поиск" decoration="chat-list" }}
+        </div>
+        <div class="sidebar__chat-list">
+            {{>
+            ChatListElement chat-name="Андрей"
+            user-name="Вы"
+            user-message="Изображение"
+            publication-date="10:49"
+            message-count="2"
+            }}
+
+            {{>
+            ChatListElement chat-name="Киноклуб"
+            user-message="Стикер"
+            publication-date="12:00"
+            }}
+
+            {{>
+            ChatListElement chat-name="Илья"
+            user-message="Друзья, у меня для вас особенный выпуск новостей!..."
+            publication-date="15:12"
+            message-count="4"
+            }}
+
+            {{>
+            ChatListElement chat-name="Вадим"
+            user-name="Вы"
+            user-message="Круто"
+            publication-date="Пт"
+            class="chat-sidebar__element-active"
+            }}
+
+            {{>
+            ChatListElement chat-name="тет-а-теты"
+            user-message="И Human Interface Guidelines и Material Design рекомендуют..."
+            publication-date="Ср"
+            }}
+
+            {{>
+            ChatListElement chat-name="1, 2, 3"
+            user-message="Миллионы россиян ежедневно проводят десятки часов свое..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Design Destroyer"
+            user-message="В 2008 году художник Jon Rafman  начал собирать..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Day."
+            user-message="Так увлёкся работой по курсу, что совсем забыл его анонсир..."
+            publication-date="1 Мая 2020"
+            }}
+
+            {{>
+            ChatListElement chat-name="Стас Рогозин"
+            user-message="Можно или сегодня или завтра..."
+            publication-date="12 Апр 2020"
+            }}
+        </div>
+    </aside>
+    <div class="chat-window">
+        <div class="chat-window__header">
+            <img src="src\images\user-image.png" class="chat-window__user-image">
+            <p class="chat-window__user-name">Вадим</p>
+            {{> Button class="add-button" }}
+        </div>
+        <div class="chat-window__content">
+            <p class="chat-window__date">19 июня</p>
+            <div class="chat-window__message">
+                <p class="chat-window__message-text">
+                Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент
+                попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты
+                летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны,
+                так как астронавты с собой забрали только кассеты с пленкой.
+                <br><br>
+                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не
+                попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+            </p>
+            </div>
+        </div>
+        <div class="chat-window__footer">
+            {{> Input type="text" placeholder="Сообщение" decoration="chat-window"}}
+            {{> Button class="push-button"}}
+        </div>
+    </div>
+</div>
+
+{{!-- Функции чата --}}
+<div class="chat-container">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            {{> Button label="Профиль" class="profile-button" type="secondary" }}
+            {{> Input type="search" placeholder="Поиск" decoration="chat-list" }}
+        </div>
+        <div class="sidebar__chat-list">
+            {{>
+            ChatListElement chat-name="Андрей"
+            user-name="Вы"
+            user-message="Изображение"
+            publication-date="10:49"
+            message-count="2"
+            }}
+
+            {{>
+            ChatListElement chat-name="Киноклуб"
+            user-message="Стикер"
+            publication-date="12:00"
+            }}
+
+            {{>
+            ChatListElement chat-name="Илья"
+            user-message="Друзья, у меня для вас особенный выпуск новостей!..."
+            publication-date="15:12"
+            message-count="4"
+            }}
+
+            {{>
+            ChatListElement chat-name="Вадим"
+            user-name="Вы"
+            user-message="Круто"
+            publication-date="Пт"
+            class="chat-sidebar__element-active"
+            }}
+
+            {{>
+            ChatListElement chat-name="тет-а-теты"
+            user-message="И Human Interface Guidelines и Material Design рекомендуют..."
+            publication-date="Ср"
+            }}
+
+            {{>
+            ChatListElement chat-name="1, 2, 3"
+            user-message="Миллионы россиян ежедневно проводят десятки часов свое..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Design Destroyer"
+            user-message="В 2008 году художник Jon Rafman  начал собирать..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Day."
+            user-message="Так увлёкся работой по курсу, что совсем забыл его анонсир..."
+            publication-date="1 Мая 2020"
+            }}
+
+            {{>
+            ChatListElement chat-name="Стас Рогозин"
+            user-message="Можно или сегодня или завтра..."
+            publication-date="12 Апр 2020"
+            }}
+        </div>
+    </aside>
+    <div class="chat-window">
+        <div class="chat-window__header">
+            <img src="src\images\user-image.png" class="chat-window__user-image">
+            <p class="chat-window__user-name">Вадим</p>
+            {{> Button class="add-button_active" }}
+        </div>
+        <div class="chat-window__content">
+            <div class="user-edit__menu">
+                {{> Button label="Добавить пользователя" class="add-user__button" }}
+                {{> Button label="Удалить пользователя" class="delete-user__button" }}
+            </div>
+            <p class="chat-window__date">19 июня</p>
+            <div class="chat-window__message">
+                <p class="chat-window__message-text">
+                Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент
+                попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты
+                летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны,
+                так как астронавты с собой забрали только кассеты с пленкой.
+                <br><br>
+                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не
+                попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+            </p>
+            </div>
+        </div>
+        <div class="chat-window__footer">
+            {{> Input type="text" placeholder="Сообщение" decoration="chat-window"}}
+            {{> Button class="push-button"}}
+        </div>
+    </div>
+</div>
+
+{{!-- Добавить/удалить пользователя --}}
+<div class="chat-container">
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            {{> Button label="Профиль" class="profile-button" type="secondary" }}
+            {{> Input type="search" placeholder="Поиск" decoration="chat-list" }}
+        </div>
+        <div class="sidebar__chat-list">
+            {{>
+            ChatListElement chat-name="Андрей"
+            user-name="Вы"
+            user-message="Изображение"
+            publication-date="10:49"
+            message-count="2"
+            }}
+
+            {{>
+            ChatListElement chat-name="Киноклуб"
+            user-message="Стикер"
+            publication-date="12:00"
+            }}
+
+            {{>
+            ChatListElement chat-name="Илья"
+            user-message="Друзья, у меня для вас особенный выпуск новостей!..."
+            publication-date="15:12"
+            message-count="4"
+            }}
+
+            {{>
+            ChatListElement chat-name="Вадим"
+            user-name="Вы"
+            user-message="Круто"
+            publication-date="Пт"
+            class="chat-sidebar__element-active"
+            }}
+
+            {{>
+            ChatListElement chat-name="тет-а-теты"
+            user-message="И Human Interface Guidelines и Material Design рекомендуют..."
+            publication-date="Ср"
+            }}
+
+            {{>
+            ChatListElement chat-name="1, 2, 3"
+            user-message="Миллионы россиян ежедневно проводят десятки часов свое..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Design Destroyer"
+            user-message="В 2008 году художник Jon Rafman  начал собирать..."
+            publication-date="Пн"
+            }}
+
+            {{>
+            ChatListElement chat-name="Day."
+            user-message="Так увлёкся работой по курсу, что совсем забыл его анонсир..."
+            publication-date="1 Мая 2020"
+            }}
+
+            {{>
+            ChatListElement chat-name="Стас Рогозин"
+            user-message="Можно или сегодня или завтра..."
+            publication-date="12 Апр 2020"
+            }}
+        </div>
+    </aside>
+    <div class="chat-window">
+        <div class="chat-window__header">
+            <img src="src\images\user-image.png" class="chat-window__user-image">
+            <p class="chat-window__user-name">Вадим</p>
+            {{> Button class="add-button" }}
+        </div>
+        <div class="chat-window__content">
+            <p class="chat-window__date">19 июня</p>
+            <div class="chat-window__message">
+                <p class="chat-window__message-text">
+                Привет! Смотри, тут всплыл интересный кусок лунной космической истории — НАСА в какой-то момент
+                попросила Хассельблад адаптировать модель SWC для полетов на Луну. Сейчас мы все знаем что астронавты
+                летали с моделью 500 EL — и к слову говоря, все тушки этих камер все еще находятся на поверхности Луны,
+                так как астронавты с собой забрали только кассеты с пленкой.
+                <br><br>
+                Хассельблад в итоге адаптировал SWC для космоса, но что-то пошло не так и на ракету они так никогда и не
+                попали. Всего их было произведено 25 штук, одну из них недавно продали на аукционе за 45000 евро.
+            </p>
+            </div>
+        </div>
+        <div class="chat-window__footer">
+            {{> Input type="text" placeholder="Сообщение" decoration="chat-window"}}
+            {{> Button class="push-button"}}
+        </div>
+    </div>
+        {{> AddNewUserDialog }}
+
+</div>
