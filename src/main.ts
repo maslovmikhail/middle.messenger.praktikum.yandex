@@ -9,6 +9,7 @@ const pages = {
   navigate: [Pages.NavigatePage],
   profile: [Pages.ProfilePage],
   notFoundPage: [Pages.NotFoundPage],
+  errorPage: [Pages.ErrorPage],
 };
 
 Object.entries(Components).forEach(([name, template]) => {
