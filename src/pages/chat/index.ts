@@ -1,4 +1,4 @@
 //@ts-ignore
-import "./chat.pcss"
+import "./chat.pcss";
 //@ts-ignore
-export {default as ChatPage}  from "./chat.hbs?raw";
+export { default as ChatPage } from "./chat.hbs?raw";
