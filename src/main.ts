@@ -8,6 +8,7 @@ const pages = {
   chat: [Pages.ChatPage],
   navigate: [Pages.NavigatePage],
   profile: [Pages.ProfilePage],
+  notFoundPage: [Pages.NotFoundPage],
 };
 
 Object.entries(Components).forEach(([name, template]) => {
