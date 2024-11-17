@@ -5,3 +5,4 @@ export { Header } from "./header";
 export { ChatListElement } from "./chat-list-element";
 export { Dialog } from "./dialog";
 export { AddNewUserDialog } from "./addNewUserDialog";
+export { AddNewAvatarDialog } from "./addNewAvatarDialog";

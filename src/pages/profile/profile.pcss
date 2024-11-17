@@ -1,0 +1,121 @@
+.profile-container {
+  display: grid;
+  grid-template-columns: 64px auto;
+  position: relative;
+  max-width: 1280px;
+  min-height: 720px;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-sidebar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sidebar-background-color);
+  border-right: 1px solid #eaeaea;
+}
+
+.backwards-button {
+  width: 28px;
+  height: 28px;
+  background: url("src/images/circle-arrow-left.png") no-repeat center;
+}
+
+.profile-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  padding-block-start: 60px;
+}
+
+.profile__edit-text {
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.profile__user-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--sidebar-background-color);
+  width: 130px;
+  height: 130px;
+  
+}
+
+.profile__user-image-container-edit {
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: #000;
+    opacity: 0.5;
+  }
+
+  &:hover .profile__edit-text {
+    opacity: 1;
+  }
+
+  &:hover .profile__user-image {
+    opacity: 0.2;
+  }
+}
+
+
+.profile__user-name {
+  margin-block-start: 21px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.profile__user-image {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.edit-profile-button {
+  margin-block-start: 60px;
+  width: 280px;
+  align-self: center;
+}
+
+.change-password-button {
+  margin-block-start: 160px;
+  width: 280px;
+  align-self: center;
+}
+
+.profile-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 480px;
+  margin-block-start: 50px;
+}
+
+.profile-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: var(--main-color);
+  width: 100%;
+  border-bottom: 1px solid var(--input-secondary-color);
+}
+
+.profile-link:last-child {
+  color: #ff0000;
+  border-bottom: none;
+}

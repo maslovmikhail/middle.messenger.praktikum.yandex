@@ -7,6 +7,7 @@ const pages = {
   signin: [Pages.SigninPage],
   chat: [Pages.ChatPage],
   navigate: [Pages.NavigatePage],
+  profile: [Pages.ProfilePage],
 };
 
 Object.entries(Components).forEach(([name, template]) => {
@@ -27,7 +28,7 @@ function navigate(page: string) {
   container.innerHTML = temlpatingFunction(context);
 }
 
-document.addEventListener("DOMContentLoaded", () => navigate("chat"));
+document.addEventListener("DOMContentLoaded", () => navigate("navigate"));
 
 document.addEventListener('click', e => {
   //@ts-ignore

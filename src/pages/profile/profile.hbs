@@ -1,0 +1,106 @@
+{{!-- Профиль --}}
+<div class="profile-container">
+  <aside class="profile-sidebar">
+    {{> Button class="backwards-button" }}
+  </aside>
+  <div class="profile-main">
+    <div class="profile__user-image-container profile__user-image-container-edit">
+      <img src="src/images/profile-user-image.png" alt="Profile user image" class="profile__user-image">
+      {{!-- <div class="profile__edit-text"> --}}
+        <p class="profile__edit-text">Поменять <br> аватар</p>
+        {{!--
+      </div> --}}
+    </div>
+    <h2 class="profile__user-name">Иван</h2>
+    <form class="edit-profile-form">
+      {{> Input label="Почта" type="email" name="email" decoration="secondary" }}
+      {{> Input label="Логин" type="text" name="login" decoration="secondary" }}
+      {{> Input label="Имя" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Фамилия" type="text" name="second_name" decoration="secondary" }}
+      {{> Input label="Имя в чате" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Телефон" type="tel" name="phone" decoration="secondary" }}
+    </form>
+
+    <div class="profile-links-container">
+      {{> Link text="Изменить данные" class="profile-link" }}
+      {{> Link text="Изменить пароль" class="profile-link" }}
+      {{> Link text="Выйти" class="profile-link" }}
+    </div>
+
+  </div>
+</div>
+
+{{!-- Изменить данные --}}
+<div class="profile-container">
+  <aside class="profile-sidebar">
+    {{> Button class="backwards-button" }}
+  </aside>
+  <div class="profile-main">
+    <div class="profile__user-image-container">
+      <img src="src/images/profile-user-image.png" alt="Profile user image" class="profile__user-image">
+      <p class="profile__edit-text">Поменять <br> аватар</p>
+    </div>
+    <form class="edit-profile-form">
+      {{> Input label="Почта" type="email" name="email" decoration="secondary" }}
+      {{> Input label="Логин" type="text" name="login" decoration="secondary" }}
+      {{> Input label="Имя" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Фамилия" type="text" name="second_name" decoration="secondary" }}
+      {{> Input label="Имя в чате" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Телефон" type="tel" name="phone" decoration="secondary" }}
+      {{> Button label="Сохранить" class="edit-profile-button" type="primary" }}
+    </form>
+  </div>
+</div>
+
+{{!-- Изменить пароль --}}
+<div class="profile-container">
+  <aside class="profile-sidebar">
+    {{> Button class="backwards-button" }}
+  </aside>
+  <div class="profile-main">
+    <div class="profile__user-image-container">
+      <img src="src/images/profile-user-image.png" alt="Profile user image" class="profile__user-image">
+      <p class="profile__edit-text">Поменять <br> аватар</p>
+
+    </div>
+    <form class="edit-profile-form">
+      {{> Input label="Старый пароль" type="password" name="password" decoration="secondary" }}
+      {{> Input label="Новый пароль" type="password" name="password" decoration="secondary" }}
+      {{> Input label="Повторить новый пароль" type="password" name="password" decoration="secondary" }}
+      {{> Button label="Сохранить" class="change-password-button" type="primary"}}
+    </form>
+  </div>
+</div>
+
+{{!-- Загрузить новый аватар --}}
+<div class="profile-container">
+  <aside class="profile-sidebar">
+    {{> Button class="backwards-button" }}
+  </aside>
+  <div class="profile-main">
+    <div class="profile__user-image-container">
+      <img src="src/images/profile-user-image.png" alt="Profile user image" class="profile__user-image">
+      {{!-- <div class="profile__edit-text"> --}}
+        <p class="profile__edit-text">Поменять <br> аватар</p>
+        {{!--
+      </div> --}}
+    </div>
+    <h2 class="profile__user-name">Иван</h2>
+    <form class="edit-profile-form">
+      {{> Input label="Почта" type="email" name="email" decoration="secondary" }}
+      {{> Input label="Логин" type="text" name="login" decoration="secondary" }}
+      {{> Input label="Имя" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Фамилия" type="text" name="second_name" decoration="secondary" }}
+      {{> Input label="Имя в чате" type="text" name="first_name" decoration="secondary" }}
+      {{> Input label="Телефон" type="tel" name="phone" decoration="secondary" }}
+    </form>
+
+    <div class="profile-links-container">
+      {{> Link text="Изменить данные" class="profile-link" }}
+      {{> Link text="Изменить пароль" class="profile-link" }}
+      {{> Link text="Выйти" class="profile-link" }}
+    </div>
+
+  </div>
+  {{> AddNewAvatarDialog }}
+</div>
