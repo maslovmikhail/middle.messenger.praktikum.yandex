@@ -32,9 +32,9 @@ function navigate(page: string) {
 
 document.addEventListener("DOMContentLoaded", () => navigate("navigate"));
 
-document.addEventListener('click', e => {
+document.addEventListener("click", (e) => {
   //@ts-ignore
-  const page = e.target.getAttribute('page');
+  const page = e.target.getAttribute("page");
   if (page) {
     navigate(page);
 
